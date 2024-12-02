@@ -1,0 +1,107 @@
+
+.main {
+  padding: 20px;
+  font-family: Arial, sams-serif;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.post {
+  background-color: #6d72fb;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.postHeader {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.postHeader h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.postHeader p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+.postContent p {
+  color: #000000;
+}
+
+.button {
+  border: none;
+  color: rgb(13, 9, 9);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.boldButton{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.lightTheme {
+  --bg-color: white;
+  --text-color: black;
+  --button-bg-color: #f0f0f0;
+  --button-text-color: black;
+}
+
+.darkTheme {
+  --bg-color: #2c2c2c;
+  --text-color: white;
+  --button-bg-color: #4c4c4c;
+  --button-text-color: white;
+}
+
+.themeContainer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.themeButton {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.themeButton:hover {
+  opacity: 0.8;
+}
+
+.authContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.authContainer > * {
+  flex: 1;
+  margin: 0 10px;
+}
